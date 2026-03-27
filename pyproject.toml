@@ -12,7 +12,9 @@ license = { file = "LICENSE" }
 authors = [
   { name = "Chaos 2 Clarity" }
 ]
-dependencies = []
+dependencies = [
+  "markdown>=3.6",
+]
 
 [project.scripts]
 c2c = "cli:main"
