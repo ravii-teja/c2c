@@ -1,0 +1,14 @@
+{
+  "source_id": "bq-prod",
+  "source_name": "Production BigQuery",
+  "source_type": "database",
+  "connection_ref": "bigquery://project",
+  "artifact_root": ".artifacts/bigquery",
+  "context_root": "./organization_context",
+  "semantic_version": "draft-v1",
+  "description": "Example BigQuery source configuration for Chaos 2 Clarity.",
+  "executor": {
+    "kind": "bigquery_client",
+    "module": "google.cloud.bigquery"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "company_name": "Example Enterprise",
+  "default_metric_owner": "data-platform",
+  "business_units": ["finance", "revops", "support"],
+  "preferred_terms": {
+    "accounts": "customers",
+    "bookings": "total_amount"
+  }
+}

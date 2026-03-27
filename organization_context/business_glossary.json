@@ -1,0 +1,16 @@
+{
+  "entries": [
+    {
+      "canonical_name": "customers",
+      "synonyms": ["clients", "accounts"],
+      "owner": "revops",
+      "description": "Customers are paying accounts tracked across sales and support systems."
+    },
+    {
+      "canonical_name": "total_amount",
+      "synonyms": ["booked revenue", "order total"],
+      "owner": "finance",
+      "description": "Gross order amount before refunds."
+    }
+  ]
+}

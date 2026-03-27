@@ -1,0 +1,17 @@
+{
+  "rules": [
+    {
+      "rule_id": "customer-data-policy",
+      "applies_to": ["customer", "customers"],
+      "policy_tags": ["policy:customer-data"],
+      "sensitivity": "confidential",
+      "description": "Customer-linked data must be treated as confidential."
+    },
+    {
+      "rule_id": "finance-metric-review",
+      "applies_to": ["total_amount", "revenue_amount"],
+      "policy_tags": ["policy:finance-review-required"],
+      "description": "Revenue-like metrics require finance review before promotion."
+    }
+  ]
+}

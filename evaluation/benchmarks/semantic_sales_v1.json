@@ -1,0 +1,18 @@
+{
+  "benchmark_id": "semantic-sales-v1",
+  "entity_names": [
+    "orders",
+    "customers"
+  ],
+  "metric_names": [
+    "total_amount",
+    "revenue_amount"
+  ],
+  "relationships": [
+    "orders|customers|primary_foreign_key"
+  ],
+  "required_policy_tags": [
+    "policy:customer-data",
+    "governance:identifier"
+  ]
+}

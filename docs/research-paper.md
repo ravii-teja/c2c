@@ -453,14 +453,14 @@ Using the perturbation taxonomy from Dr. Spider [[35]](https://arxiv.org/abs/230
 
 | Dimension | Chaos 2 Clarity | NL2SQL [[13]](https://arxiv.org/abs/2407.15186) | InsightPilot [[20]](https://aclanthology.org/2023.emnlp-demo.31/) | SiriusBI [[14]](https://arxiv.org/abs/2411.06102) | Data Catalogs [[7]](https://arxiv.org/abs/2503.09003), [[8]](https://arxiv.org/abs/2502.15182) |
 |-----------|---|---|---|---|---|
-| Handles uncurated data | | ❌ | ❌ | ❌ | Partial |
-| Automated semantic synthesis | | ❌ | ❌ | ❌ | |
-| Multi-source cross-join planning | | ❌ | Partial | ❌ | ❌ |
-| RAG over mixed structured + unstructured [[9]](https://arxiv.org/abs/2005.11401) | | ❌ | ❌ | ❌ | ❌ |
-| Governance / safety layer | | ❌ | ❌ | Partial | Partial |
-| Feedback-driven refinement | | ❌ | ❌ | ❌ | ❌ |
-| Production-oriented evaluation plan | | Varies | ❌ | | ❌ |
-| Conversational BI interface | | Partial | | | ❌ |
+| Handles uncurated data | ✅ | ❌ | ❌ | ❌ | Partial |
+| Automated semantic synthesis | ✅ | ❌ | ❌ | ❌ | ✅ |
+| Multi-source cross-join planning | ✅ | ❌ | Partial | ❌ | ❌ |
+| RAG over mixed structured + unstructured [[9]](https://arxiv.org/abs/2005.11401) | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Governance / safety layer | ✅ | ❌ | ❌ | Partial | Partial |
+| Feedback-driven refinement | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Production-oriented evaluation plan | ✅ | Varies | ❌ | ✅ | ❌ |
+| Conversational BI interface | ✅ | Partial | ✅ | ✅ | ❌ |
 
 
 ## Appendix E: Glossary of Key Terms

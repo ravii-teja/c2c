@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chaos 2 Clarity Local Scanner</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Chaos 2 Clarity</p>
+        <h1>Scan a local workspace and synthesize a semantic layer.</h1>
+        <p class="lede">
+          Point the app at a folder on your machine to discover CSVs, JSON files,
+          PDFs, markdown, notes, and other common business artifacts for analysis.
+        </p>
+      </section>
+
+      <section class="panel">
+        <form id="scan-form" class="scan-form">
+          <label>
+            Root path
+            <input id="root-path" name="root_path" type="text" placeholder="/Users/you/Documents" required />
+          </label>
+
+          <label>
+            Artifact root
+            <input id="artifact-root" name="artifact_root" type="text" placeholder=".artifacts/ui" />
+          </label>
+
+          <label>
+            Organization context
+            <input id="context-root" name="context_root" type="text" placeholder="organization_context" />
+          </label>
+
+          <label>
+            Max files
+            <input id="max-files" name="max_files" type="number" min="1" max="5000" value="500" />
+          </label>
+
+          <label>
+            Extensions
+            <input
+              id="extensions"
+              name="extensions"
+              type="text"
+              value="csv,tsv,json,txt,md,pdf,xlsx,xls,parquet"
+              placeholder="csv,pdf,md,json"
+            />
+          </label>
+
+          <button id="scan-button" type="submit">Run scan</button>
+        </form>
+        <p id="status" class="status">Ready.</p>
+      </section>
+
+      <section id="results" class="results hidden">
+        <div class="summary-grid" id="summary-grid"></div>
+
+        <div class="content-grid">
+          <article class="panel">
+            <h2>Entities</h2>
+            <div id="entities"></div>
+          </article>
+
+          <article class="panel">
+            <h2>Metrics</h2>
+            <div id="metrics"></div>
+          </article>
+
+          <article class="panel">
+            <h2>Relationships</h2>
+            <div id="relationships"></div>
+          </article>
+
+          <article class="panel full-width">
+            <h2>Discovered Assets</h2>
+            <div id="assets"></div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
