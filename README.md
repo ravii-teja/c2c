@@ -126,14 +126,14 @@ The implementation language is Python, and the executable modules live directly 
 |   `-- styles.css
 `-- .github/
     `-- workflows/
-        `-- research-paper-pages.yml
+        `-- deploy-research-paper.yml
 ```
 
 ## Research Paper Publishing
 
 The repository now treats [research-paper.md](/Users/home/Development/c2c/docs/research-paper.md) as the source of truth for the public paper.
 
-GitHub Pages deployment is handled by [research-paper-pages.yml](/Users/home/Development/c2c/.github/workflows/research-paper-pages.yml), which:
+GitHub Pages deployment is handled by [deploy-research-paper.yml](/Users/home/Development/c2c/.github/workflows/deploy-research-paper.yml), which:
 
 - triggers on changes to the research paper or Pages build workflow,
 - builds a static `index.html` from the markdown source using [build_pages.py](/Users/home/Development/c2c/scripts/build_pages.py),
